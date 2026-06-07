@@ -1,7 +1,3 @@
-% --------------------------------------------------
-% Test del torneo
-% --------------------------------------------------
-
 #include "calendario.cl".
 
 % Controlli di coerenza
@@ -10,7 +6,7 @@ test_fallito(incontro_senza_match) :- incontro(A,B,T), not match(A,B,_,T).
 test_fallito(vincitore_non_coerente) :- match(A,B,V,_), V != A, V != B.
 test_superato :- not test_fallito(_).
 
-% Output mostrato dallo script Python
+% Output mostrato dal python
 #show turno/1.
 #show partecipante/1.
 #show ongoing_partecipante/2.

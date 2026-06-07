@@ -1,7 +1,3 @@
-% --------------------------------------------------
-% Calendario del torneo
-% --------------------------------------------------
-
 #include "partecipanti.cl".
 #include "classifica.cl".
 

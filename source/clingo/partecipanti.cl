@@ -1,7 +1,3 @@
-% --------------------------------------------------
-% Partecipanti
-% --------------------------------------------------
-
 % Fatti base
 partecipante(mario).
 partecipante(giovanni).

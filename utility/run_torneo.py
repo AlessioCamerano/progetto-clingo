@@ -6,7 +6,12 @@ import sys
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DEFAULT_PROGRAM_FILE = (BASE_DIR.parent / "source" / "clips" / "test.cl").resolve()
+# Prefer the renamed folder `source/clingo`; fall back to `source/clips` for compatibility
+DEFAULT_PROGRAM_FILE = (BASE_DIR.parent / "source" / "clingo" / "test.cl").resolve()
+if not DEFAULT_PROGRAM_FILE.exists():
+    legacy = (BASE_DIR.parent / "source" / "clips" / "test.cl").resolve()
+    if legacy.exists():
+        DEFAULT_PROGRAM_FILE = legacy
 
 
 def parse_atom(atom):

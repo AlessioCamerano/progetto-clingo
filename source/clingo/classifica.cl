@@ -1,7 +1,3 @@
-% --------------------------------------------------
-% Classifica finale
-% --------------------------------------------------
-
 #include "partecipanti.cl".
 
 % Partecipanti presenti
