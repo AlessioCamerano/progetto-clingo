@@ -1,0 +1,16 @@
+# Requisiti per eseguire il progetto "progetto clingo"
+# Sistema
+Python>=3.8
+# Clingo (Potassco) - eseguibile da riga di comando
+# Installare tramite package manager (es. apt, brew), conda, o dal sito Potassco
+clingo>=5.5
+
+# Pacchetti Python
+# Nessun pacchetto esterno richiesto: lo script usa solo la libreria standard (collections, pathlib, json, subprocess, sys)
+
+# Opzionali (per eseguire il notebook)
+jupyter
+
+# Note:
+# - Lo script Python invoca l'eseguibile `clingo` (non usa il binding Python). Assicurarsi che `clingo` sia disponibile nel PATH.
+# - Per installare Clingo su Debian/Ubuntu: `sudo apt install clingo` oppure usare `conda install -c conda-forge clingo`.
